@@ -10,7 +10,21 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        List() {
+            ForEach(0..<8) { _ in
+                HStack {
+                    ForEach(0..<2) {_ in
+                        VStack {
+                            Image("SwiftUI")
+                                .resizable()
+                                .scaledToFit()
+                            Text("タイトル")
+                                .font(.title)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

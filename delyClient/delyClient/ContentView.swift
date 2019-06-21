@@ -10,21 +10,30 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
+        
         List() {
+            // ここでUINatigationBar
             ForEach(0..<8) { _ in
+                // 縦
                 HStack {
                     ForEach(0..<2) {_ in
+                        // 横
                         VStack {
-                            Image("SwiftUI")
-                                .resizable()
-                                .scaledToFit()
-                            Text("タイトル")
-                                .font(.title)
+                        Image("SwiftUI")
+                            .resizable()
+                            .scaledToFit()
+                            .padding(.bottom, 8.0)
+                            .padding(.top, 12.0)
+                        Text("タイトル")
+                            .font(.subheadline)
+                            .lineLimit(2)
+                            .padding(.bottom, 24.0)
                         }
                     }
                 }
             }
         }
+        .padding(.horizontal,-10.0)
     }
 }
 

@@ -15,6 +15,7 @@
 		D86CDACF22BB24DE00BD4010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86CDACE22BB24DE00BD4010 /* Preview Assets.xcassets */; };
 		D86CDAD222BB24DE00BD4010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86CDAD022BB24DE00BD4010 /* LaunchScreen.storyboard */; };
 		D8913E9722BBAA6E006ABFF0 /* ModelAcquisition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */; };
+		D8C8746522BDF36300D8F003 /* getAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746422BDF36300D8F003 /* getAPIData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D86CDAD122BB24DE00BD4010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D86CDAD322BB24DE00BD4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAcquisition.swift; sourceTree = "<group>"; };
+		D8C8746422BDF36300D8F003 /* getAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getAPIData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				2CB468F41E13C5E07D9A0752 /* Pods-delyClient.debug.xcconfig */,
 				3FC67B078C2402041682D31C /* Pods-delyClient.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,10 +84,10 @@
 		D86CDAC422BB24DB00BD4010 /* delyClient */ = {
 			isa = PBXGroup;
 			children = (
+				D8C8746722BDF9BA00D8F003 /* Model */,
+				D8C8746622BDF9AF00D8F003 /* View */,
 				D86CDAC522BB24DB00BD4010 /* AppDelegate.swift */,
 				D86CDAC722BB24DB00BD4010 /* SceneDelegate.swift */,
-				D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */,
-				D86CDAC922BB24DB00BD4010 /* ContentView.swift */,
 				D86CDACB22BB24DE00BD4010 /* Assets.xcassets */,
 				D86CDAD022BB24DE00BD4010 /* LaunchScreen.storyboard */,
 				D86CDAD322BB24DE00BD4010 /* Info.plist */,
@@ -101,6 +102,23 @@
 				D86CDACE22BB24DE00BD4010 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8C8746622BDF9AF00D8F003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D86CDAC922BB24DB00BD4010 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8C8746722BDF9BA00D8F003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8746422BDF36300D8F003 /* getAPIData.swift */,
+				D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +249,7 @@
 				D86CDAC822BB24DB00BD4010 /* SceneDelegate.swift in Sources */,
 				D86CDACA22BB24DB00BD4010 /* ContentView.swift in Sources */,
 				D8913E9722BBAA6E006ABFF0 /* ModelAcquisition.swift in Sources */,
+				D8C8746522BDF36300D8F003 /* getAPIData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

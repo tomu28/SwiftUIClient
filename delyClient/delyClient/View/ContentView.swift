@@ -13,6 +13,8 @@ struct ContentView : View {
         
         List() {
             // ここでUINatigationBar
+            
+            // APIDataCountの値を使う
             ForEach(0..<8) { _ in
                 // 縦
                 HStack {

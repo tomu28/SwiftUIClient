@@ -9,35 +9,34 @@
 import SwiftUI
 
 struct ContentView : View {
+    
     var body: some View {
-        
         List() {
-            // ここでUINatigationBar
-            
-            // APIDataCountの値を使う
-            ForEach(0..<8) { _ in
-                // 縦
+            ForEach(0..<10) { index in
                 HStack {
-                    ForEach(0..<2) {_ in
-                        // 横
+                    ForEach(0..<1) { _ in
                         VStack {
-                        Image("SwiftUI")
-                            .resizable()
-                            .scaledToFit()
-                            .padding(.bottom, 8.0)
-                            .padding(.top, 12.0)
-                        Text("タイトル")
-                            .font(.subheadline)
-                            .lineLimit(2)
-                            .padding(.bottom, 24.0)
+                            Image(uiImage: UIImage(url:
+                                APIDataList[index * 2]["image"]!!))
+                                .resizable()
+                                .scaledToFit()
+                            Text(APIDataList[index * 2]["title"]!!)
+                        }
+                        VStack {
+                            Image(uiImage: UIImage(url:
+                                APIDataList[index * 2 + 1]["image"]!!))
+                                .resizable()
+                                .scaledToFit()
+                            Text(APIDataList[index * 2 + 1]["title"]!!)
                         }
                     }
                 }
             }
         }
-        .padding(.horizontal,-10.0)
     }
+
 }
+
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {

@@ -16,6 +16,8 @@
 		D86CDAD222BB24DE00BD4010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86CDAD022BB24DE00BD4010 /* LaunchScreen.storyboard */; };
 		D8913E9722BBAA6E006ABFF0 /* ModelAcquisition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */; };
 		D8C8746522BDF36300D8F003 /* getAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746422BDF36300D8F003 /* getAPIData.swift */; };
+		D8C8746A22BE6D0C00D8F003 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746922BE6D0B00D8F003 /* UIImage.swift */; };
+		D8C8746E22BF83AB00D8F003 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746D22BF83AB00D8F003 /* URLImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D86CDAD322BB24DE00BD4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAcquisition.swift; sourceTree = "<group>"; };
 		D8C8746422BDF36300D8F003 /* getAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getAPIData.swift; sourceTree = "<group>"; };
+		D8C8746922BE6D0B00D8F003 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		D8C8746D22BF83AB00D8F003 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		D86CDAC422BB24DB00BD4010 /* delyClient */ = {
 			isa = PBXGroup;
 			children = (
+				D8C8746822BE6CAD00D8F003 /* extension */,
 				D8C8746722BDF9BA00D8F003 /* Model */,
 				D8C8746622BDF9AF00D8F003 /* View */,
 				D86CDAC522BB24DB00BD4010 /* AppDelegate.swift */,
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D86CDAC922BB24DB00BD4010 /* ContentView.swift */,
+				D8C8746D22BF83AB00D8F003 /* URLImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +125,14 @@
 				D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D8C8746822BE6CAD00D8F003 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8746922BE6D0B00D8F003 /* UIImage.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +237,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-delyClient/Pods-delyClient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -231,6 +246,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,8 +264,10 @@
 				D86CDAC622BB24DB00BD4010 /* AppDelegate.swift in Sources */,
 				D86CDAC822BB24DB00BD4010 /* SceneDelegate.swift in Sources */,
 				D86CDACA22BB24DB00BD4010 /* ContentView.swift in Sources */,
+				D8C8746A22BE6D0C00D8F003 /* UIImage.swift in Sources */,
 				D8913E9722BBAA6E006ABFF0 /* ModelAcquisition.swift in Sources */,
 				D8C8746522BDF36300D8F003 /* getAPIData.swift in Sources */,
+				D8C8746E22BF83AB00D8F003 /* URLImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ var APIDataList: [[String: String?]] = []
 var selectTitle: String!
 var selectImage: URL!
 
-var APIDataCount = 5
+var APIDataCount = 20
 
 class getAPIData {
     
@@ -42,7 +42,12 @@ class getAPIData {
                 print(APIData)
                 print(APIDataCount)
             }
+            print("APIを取得完了")
+            print("APIDataList")
+            print(APIDataList[0]["title"]!!)
+            print(APIDataList[1]["title"]!!)
         }
     }
     
 }
+

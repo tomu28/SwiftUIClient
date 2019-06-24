@@ -1,6 +1,10 @@
 # delyClient
 dely株式会社のiOSインターン事前課題
 
+## 開発環境
+- masOS 10.15 Beta2(19A487I)
+- Xcode 11.0 Beta2(11M337n)
+
 ## 実装において工夫したポイント
 
 SwiftUIを用い、View周りの処理を全て簡潔なコードで記述しています。  
@@ -8,6 +12,5 @@ SwiftUIを用いるメリットとして、リアルタイムにコードのUI�
 
 ロジック部分とビュー部分のコードは分け、他の開発メンバーが見てもすぐにディレクトリ構成が分かるようにしました。APIから取得した画像を2列のグリッド表示で順番に表示する際は、[indexの値を用いたアルゴリズム](https://github.com/tomu28/delyClient/wiki/%E5%8F%96%E5%BE%97%E3%81%97%E3%81%9F%E7%94%BB%E5%83%8F%E3%82%92%E9%A0%86%E7%95%AA%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%AB%E7%94%A8%E3%81%84%E3%81%9F%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0)を使いシンプルなコードで表現しました。
 
-## 開発環境
-- masOS 10.15 Beta2(19A487I)
-- Xcode 11.0 Beta2(11M337n)
+## 動作の例
+![Gif](https://user-images.githubusercontent.com/28621480/59999792-cf180300-969d-11e9-914e-6fc3a4bc11fa.gif)

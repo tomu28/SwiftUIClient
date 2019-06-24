@@ -1,0 +1,6 @@
+framework module Pods_delyClient {
+  umbrella header "Pods-delyClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

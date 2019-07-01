@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView : View {
+    @State var favorite = "heart"
     
     var body: some View {
         NavigationView{
@@ -27,12 +28,17 @@ struct ContentView : View {
                                     .padding(.leading, -6.0)
                                     .overlay(
                                         HStack {
-                                            Image(systemName: "heart")
+                                            Image(systemName: self.favorite)
                                                 .tapAction
                                                 {
                                                     print(index * 2)
                                                     if ButtonState.firstIndex(of: index * 2) == nil{
                                                         ButtonState.insert(index * 2, at: 0)
+                                                        self.favorite = "heart.fill"
+                                                    }else {
+                                                        let i = ButtonState.index(of: index * 2)
+                                                        ButtonState.remove(at: i!)
+                                                        self.favorite = "heart"
                                                     }
                                                     print(ButtonState)
                                                 }
@@ -58,12 +64,17 @@ struct ContentView : View {
                                     .padding(.leading, 2.0)
                                     .overlay(
                                         HStack {
-                                            Image(systemName: "heart")
+                                            Image(systemName: self.favorite)
                                                 .tapAction
                                                 {
                                                     print(index * 2 + 1)
                                                     if ButtonState.firstIndex(of: index * 2 + 1) == nil{
                                                         ButtonState.insert(index * 2 + 1, at: 0)
+                                                        self.favorite = "heart.fill"
+                                                    }else {
+                                                        let i = ButtonState.index(of: index * 2 + 1)
+                                                        ButtonState.remove(at: i!)
+                                                        self.favorite = "heart"
                                                     }
                                                     print(ButtonState)
                                                 }

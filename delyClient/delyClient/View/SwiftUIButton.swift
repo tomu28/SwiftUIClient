@@ -7,10 +7,22 @@
 //
 
 import SwiftUI
+// 画像の上にボタンを設置する実装
+// この時、ボタンのみにactionが実行されるか確認
 
 struct SwiftUIButton : View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            print("Tap!!")
+        }, label: {
+            Image(systemName: "heart")
+            Text("Click Me")
+            Text("Subtitle")
+        })
+            .foregroundColor(Color.pink)
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(5)
     }
 }
 

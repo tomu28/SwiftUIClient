@@ -18,9 +18,9 @@
 		D8B0996922C0858900ECF332 /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0996822C0858900ECF332 /* RecipeList.swift */; };
 		D8B0996B22C085E800ECF332 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0996A22C085E800ECF332 /* FavoriteList.swift */; };
 		D8B0996D22C0886E00ECF332 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0996C22C0886E00ECF332 /* UserData.swift */; };
+		D8B0997122C934E100ECF332 /* SwiftUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0997022C934E100ECF332 /* SwiftUIButton.swift */; };
 		D8C8746522BDF36300D8F003 /* getAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746422BDF36300D8F003 /* getAPIData.swift */; };
 		D8C8746A22BE6D0C00D8F003 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746922BE6D0B00D8F003 /* UIImage.swift */; };
-		D8C8746E22BF83AB00D8F003 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746D22BF83AB00D8F003 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +39,9 @@
 		D8B0996822C0858900ECF332 /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
 		D8B0996A22C085E800ECF332 /* FavoriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteList.swift; sourceTree = "<group>"; };
 		D8B0996C22C0886E00ECF332 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		D8B0997022C934E100ECF332 /* SwiftUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIButton.swift; sourceTree = "<group>"; };
 		D8C8746422BDF36300D8F003 /* getAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getAPIData.swift; sourceTree = "<group>"; };
 		D8C8746922BE6D0B00D8F003 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		D8C8746D22BF83AB00D8F003 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				D86CDAC922BB24DB00BD4010 /* ContentView.swift */,
-				D8C8746D22BF83AB00D8F003 /* Image.swift */,
 				D8B0996822C0858900ECF332 /* RecipeList.swift */,
 				D8B0996A22C085E800ECF332 /* FavoriteList.swift */,
+				D8B0997022C934E100ECF332 /* SwiftUIButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,9 +273,9 @@
 				D86CDAC822BB24DB00BD4010 /* SceneDelegate.swift in Sources */,
 				D86CDACA22BB24DB00BD4010 /* ContentView.swift in Sources */,
 				D8C8746A22BE6D0C00D8F003 /* UIImage.swift in Sources */,
+				D8B0997122C934E100ECF332 /* SwiftUIButton.swift in Sources */,
 				D8913E9722BBAA6E006ABFF0 /* ModelAcquisition.swift in Sources */,
 				D8C8746522BDF36300D8F003 /* getAPIData.swift in Sources */,
-				D8C8746E22BF83AB00D8F003 /* Image.swift in Sources */,
 				D8B0996D22C0886E00ECF332 /* UserData.swift in Sources */,
 				D8B0996922C0858900ECF332 /* RecipeList.swift in Sources */,
 			);

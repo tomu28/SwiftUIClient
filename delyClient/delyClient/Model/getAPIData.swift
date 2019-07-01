@@ -17,6 +17,8 @@ var selectImage: URL!
 
 var APIDataCount = 20
 
+var ButtonState: [Int] = []
+
 class getAPIData {
     
     func getAPI() {

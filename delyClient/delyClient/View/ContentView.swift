@@ -27,19 +27,19 @@ struct ContentView : View {
                                     .padding(.leading, -6.0)
                                     .overlay(
                                         HStack {
-                                            // Button(action:{print(index * 2)})
-                                            //{
                                             Image(systemName: "heart")
                                                 .tapAction
                                                 {
                                                     print(index * 2)
-                                            }
-                                            
-                                            // }
-                                            }
-                                            .padding()
-                                            .foregroundColor(.pink)
-                                            .background(Color.white.opacity(0.1)),
+                                                    if ButtonState.firstIndex(of: index * 2) == nil{
+                                                        ButtonState.insert(index * 2, at: 0)
+                                                    }
+                                                    print(ButtonState)
+                                                }
+                                        }
+                                        .padding()
+                                        .foregroundColor(.pink)
+                                        .background(Color.white.opacity(0.1)),
                                         alignment: .topTrailing
                                     )
 
@@ -58,19 +58,19 @@ struct ContentView : View {
                                     .padding(.leading, 2.0)
                                     .overlay(
                                         HStack {
-                                            // Button(action:{print(index * 2 + 1)})
-                                            //{
                                             Image(systemName: "heart")
                                                 .tapAction
                                                 {
                                                     print(index * 2 + 1)
+                                                    if ButtonState.firstIndex(of: index * 2 + 1) == nil{
+                                                        ButtonState.insert(index * 2 + 1, at: 0)
+                                                    }
+                                                    print(ButtonState)
                                                 }
-                                            
-                                            // }
-                                            }
-                                            .padding()
-                                            .foregroundColor(.pink)
-                                            .background(Color.white.opacity(0.1)),
+                                        }
+                                        .padding()
+                                        .foregroundColor(.pink)
+                                        .background(Color.white.opacity(0.1)),
                                         alignment: .topTrailing
                                     )
                                 

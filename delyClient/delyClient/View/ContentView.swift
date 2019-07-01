@@ -18,7 +18,6 @@ struct ContentView : View {
                     HStack {
                         ForEach(0..<1) { _ in
                             VStack {
-
                                 Image(uiImage: UIImage(url:
                                     APIDataList[index * 2]["image"]!!))
                                     .resizable()
@@ -28,15 +27,22 @@ struct ContentView : View {
                                     .padding(.leading, -6.0)
                                     .overlay(
                                         HStack {
-                                            Button(action:{}){
-                                                Image(systemName: "heart")
+                                            // Button(action:{print(index * 2)})
+                                            //{
+                                            Image(systemName: "heart")
+                                                .tapAction
+                                                {
+                                                    print(index * 2)
                                             }
-                                        }
-                                        .padding()
-                                        .foregroundColor(.pink)
-                                        .background(Color.white.opacity(0.1)),
+                                            
+                                            // }
+                                            }
+                                            .padding()
+                                            .foregroundColor(.pink)
+                                            .background(Color.white.opacity(0.1)),
                                         alignment: .topTrailing
                                     )
+
                                 Text(APIDataList[index * 2]["title"]!!)
                                     .font(.system(size: 11))
                                     .fontWeight(.bold)
@@ -52,15 +58,22 @@ struct ContentView : View {
                                     .padding(.leading, 2.0)
                                     .overlay(
                                         HStack {
-                                            Button(action:{}){
-                                                Image(systemName: "heart")
-                                            }
+                                            // Button(action:{print(index * 2 + 1)})
+                                            //{
+                                            Image(systemName: "heart")
+                                                .tapAction
+                                                {
+                                                    print(index * 2 + 1)
+                                                }
+                                            
+                                            // }
                                             }
                                             .padding()
                                             .foregroundColor(.pink)
                                             .background(Color.white.opacity(0.1)),
                                         alignment: .topTrailing
                                     )
+                                
                                 Text(APIDataList[index * 2 + 1]["title"]!!)
                                     .font(.system(size: 11))
                                     .fontWeight(.bold)
@@ -73,7 +86,7 @@ struct ContentView : View {
             .foregroundColor(.orange)
             .navigationBarTitle(Text("料理"))
         }
-        
+
 //        Image("SwiftUI")
 //            .overlay(
 //                HStack {
@@ -89,7 +102,7 @@ struct ContentView : View {
 //
 //                alignment: .topTrailing
 //        )
-    
+
     }
 
 }

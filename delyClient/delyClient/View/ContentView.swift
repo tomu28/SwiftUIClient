@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView : View {
-    @State var favorite = "heart"
+     @State var favorite = [String](repeating: "heart", count: 20)
     
     var body: some View {
         NavigationView{
@@ -28,17 +28,17 @@ struct ContentView : View {
                                     .padding(.leading, -6.0)
                                     .overlay(
                                         HStack {
-                                            Image(systemName: self.favorite)
+                                            Image(systemName: self.favorite[index * 2])
                                                 .tapAction
                                                 {
                                                     print(index * 2)
                                                     if ButtonState.firstIndex(of: index * 2) == nil{
                                                         ButtonState.insert(index * 2, at: 0)
-                                                        self.favorite = "heart.fill"
+                                                        self.favorite[index * 2] = "heart.fill"
                                                     }else {
-                                                        let i = ButtonState.index(of: index * 2)
+                                                        let i = ButtonState.firstIndex(of: index * 2)
                                                         ButtonState.remove(at: i!)
-                                                        self.favorite = "heart"
+                                                        self.favorite[index * 2] = "heart"
                                                     }
                                                     print(ButtonState)
                                                 }
@@ -64,17 +64,17 @@ struct ContentView : View {
                                     .padding(.leading, 2.0)
                                     .overlay(
                                         HStack {
-                                            Image(systemName: self.favorite)
+                                            Image(systemName: self.favorite[index * 2 + 1])
                                                 .tapAction
                                                 {
                                                     print(index * 2 + 1)
                                                     if ButtonState.firstIndex(of: index * 2 + 1) == nil{
                                                         ButtonState.insert(index * 2 + 1, at: 0)
-                                                        self.favorite = "heart.fill"
+                                                        self.favorite[index * 2 + 1] = "heart.fill"
                                                     }else {
-                                                        let i = ButtonState.index(of: index * 2 + 1)
+                                                        let i = ButtonState.firstIndex(of: index * 2 + 1)
                                                         ButtonState.remove(at: i!)
-                                                        self.favorite = "heart"
+                                                        self.favorite[index * 2 + 1] = "heart"
                                                     }
                                                     print(ButtonState)
                                                 }
@@ -97,23 +97,6 @@ struct ContentView : View {
             .foregroundColor(.orange)
             .navigationBarTitle(Text("料理"))
         }
-
-//        Image("SwiftUI")
-//            .overlay(
-//                HStack {
-//                    Button(action:{}){
-//                        Image(systemName: "heart")
-//                    }
-//                    // Text("Artichokes") // Text to use as a caption.
-////                    Spacer()
-//                    }
-//                    .padding()
-//                    .foregroundColor(.white)
-//                    .background(Color.white.opacity(0.1)),
-//
-//                alignment: .topTrailing
-//        )
-
     }
 
 }

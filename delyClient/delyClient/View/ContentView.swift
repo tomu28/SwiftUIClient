@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView : View {
-     @State var favorite = [String](repeating: "heart", count: 20)
+     @State var favorite = [String](repeating: "heart", count: APIDataCount)
     
     var body: some View {
         NavigationView{

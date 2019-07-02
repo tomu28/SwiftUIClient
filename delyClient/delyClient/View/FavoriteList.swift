@@ -10,7 +10,13 @@ import SwiftUI
 
 struct FavoriteList : View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        Text("FavoriteList")
+        
+        
+        // ButtonState.count で個数をカウント
+        // ex) [10, 8]
+        
+        
     }
 }
 

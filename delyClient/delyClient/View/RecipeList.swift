@@ -45,13 +45,13 @@ struct RecipeList : View {
                                                         print(self.favorite[index * 2])
                                                     }
                                                     print(ButtonState)
-                                            }
-                                            }
-                                            .padding()
-                                            .foregroundColor(.pink)
-                                            .background(Color.white.opacity(0.1)),
+                                                }
+                                        }
+                                        .padding()
+                                        .foregroundColor(.pink)
+                                        .background(Color.white.opacity(0.1)),
                                         alignment: .topTrailing
-                                )
+                                    )
                                 
                                 Text(APIDataList[index * 2]["title"]!!)
                                     .font(.system(size: 11))
@@ -69,27 +69,26 @@ struct RecipeList : View {
                                     .overlay(
                                         HStack {
                                             Image(systemName: self.favorite[index * 2 + 1])
-                                                .tapAction
-                                                {
-                                                    print(index * 2 + 1)
-                                                    if ButtonState.firstIndex(of: index * 2 + 1) == nil{
-                                                        ButtonState.insert(index * 2 + 1, at: 0)
-                                                        self.favorite[index * 2 + 1] = "heart.fill"
-                                                        // Lottieアニメーション
-                                                        
-                                                    }else {
-                                                        let i = ButtonState.firstIndex(of: index * 2 + 1)
-                                                        ButtonState.remove(at: i!)
-                                                        self.favorite[index * 2 + 1] = "heart"
-                                                    }
-                                                    print(ButtonState)
+                                            .tapAction {
+                                                print(index * 2 + 1)
+                                                if ButtonState.firstIndex(of: index * 2 + 1) == nil{
+                                                    ButtonState.insert(index * 2 + 1, at: 0)
+                                                    self.favorite[index * 2 + 1] = "heart.fill"
+                                                    // Lottieアニメーション
+                                                    
+                                                }else {
+                                                    let i = ButtonState.firstIndex(of: index * 2 + 1)
+                                                    ButtonState.remove(at: i!)
+                                                    self.favorite[index * 2 + 1] = "heart"
+                                                }
+                                                print(ButtonState)
                                             }
-                                            }
-                                            .padding()
-                                            .foregroundColor(.pink)
-                                            .background(Color.white.opacity(0.1)),
+                                        }
+                                        .padding()
+                                        .foregroundColor(.pink)
+                                        .background(Color.white.opacity(0.1)),
                                         alignment: .topTrailing
-                                )
+                                    )
                                 
                                 Text(APIDataList[index * 2 + 1]["title"]!!)
                                     .font(.system(size: 11))
@@ -99,9 +98,9 @@ struct RecipeList : View {
                         }
                     }
                 }
-                }
-                .foregroundColor(.orange)
-                .navigationBarTitle(Text("料理"))
+            }
+            .foregroundColor(.orange)
+            .navigationBarTitle(Text("料理"))
         }
     }
 }

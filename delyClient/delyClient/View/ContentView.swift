@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView : View {
-     @State var favorite = [String](repeating: "heart", count: APIDataCount)
+    @State var favorite = [String](repeating: "heart", count: APIDataCount)
     
     var body: some View {
         NavigationView{
@@ -35,6 +35,8 @@ struct ContentView : View {
                                                     if ButtonState.firstIndex(of: index * 2) == nil{
                                                         ButtonState.insert(index * 2, at: 0)
                                                         self.favorite[index * 2] = "heart.fill"
+                                                        // Lottieアニメーション
+                                                        
                                                     }else {
                                                         let i = ButtonState.firstIndex(of: index * 2)
                                                         ButtonState.remove(at: i!)
@@ -71,6 +73,8 @@ struct ContentView : View {
                                                     if ButtonState.firstIndex(of: index * 2 + 1) == nil{
                                                         ButtonState.insert(index * 2 + 1, at: 0)
                                                         self.favorite[index * 2 + 1] = "heart.fill"
+                                                        // Lottieアニメーション
+                                                        
                                                     }else {
                                                         let i = ButtonState.firstIndex(of: index * 2 + 1)
                                                         ButtonState.remove(at: i!)

@@ -11,12 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 var APIDataList: [[String: String?]] = []
-
-var selectTitle: String!
-var selectImage: URL!
-
 var APIDataCount = 20
-
 var ButtonState: [Int] = []
 
 class getAPIData {

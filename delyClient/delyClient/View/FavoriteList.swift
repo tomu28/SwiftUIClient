@@ -13,7 +13,6 @@ struct FavoriteList : View {
 
     var body: some View {
         NavigationView{
-            // ButtonStateList = ButtonState
             
             List() {
                 ForEach(0..<ButtonState.count/2) { index in
@@ -27,13 +26,6 @@ struct FavoriteList : View {
                                     .padding(.bottom, 8.0)
                                     .padding(.trailing, 2.0)
                                     .padding(.leading, -6.0)
-//                                    .tapAction
-//                                    {
-//                                        print(index * 2)
-//                                        print(self.ButtonStateList)
-//                                        print(self.ButtonStateList.count/2)
-//                                    }
-                                
                                 Text(APIDataList[ButtonState[index * 2]]["title"]!!)
                                     .font(.system(size: 11))
                                     .fontWeight(.bold)

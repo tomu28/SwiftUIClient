@@ -14,10 +14,14 @@
 		D86CDACC22BB24DE00BD4010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86CDACB22BB24DE00BD4010 /* Assets.xcassets */; };
 		D86CDACF22BB24DE00BD4010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86CDACE22BB24DE00BD4010 /* Preview Assets.xcassets */; };
 		D86CDAD222BB24DE00BD4010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86CDAD022BB24DE00BD4010 /* LaunchScreen.storyboard */; };
-		D8913E9722BBAA6E006ABFF0 /* ModelAcquisition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */; };
+		D885033B22CA269F0025D74C /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = D885033A22CA269F0025D74C /* heart.json */; };
+		D885033D22CA27930025D74C /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D885033C22CA27930025D74C /* LottieAnimation.swift */; };
+		D885034022CA29380025D74C /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = D885033F22CA29380025D74C /* Bridging-Header.m */; };
+		D8B0996922C0858900ECF332 /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0996822C0858900ECF332 /* RecipeList.swift */; };
+		D8B0996B22C085E800ECF332 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0996A22C085E800ECF332 /* FavoriteList.swift */; };
+		D8B0996D22C0886E00ECF332 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0996C22C0886E00ECF332 /* UserData.swift */; };
 		D8C8746522BDF36300D8F003 /* getAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746422BDF36300D8F003 /* getAPIData.swift */; };
 		D8C8746A22BE6D0C00D8F003 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746922BE6D0B00D8F003 /* UIImage.swift */; };
-		D8C8746E22BF83AB00D8F003 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8746D22BF83AB00D8F003 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +36,15 @@
 		D86CDACE22BB24DE00BD4010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D86CDAD122BB24DE00BD4010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D86CDAD322BB24DE00BD4010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAcquisition.swift; sourceTree = "<group>"; };
+		D885033A22CA269F0025D74C /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
+		D885033C22CA27930025D74C /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		D885033E22CA29370025D74C /* delyClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "delyClient-Bridging-Header.h"; sourceTree = "<group>"; };
+		D885033F22CA29380025D74C /* Bridging-Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
+		D8B0996822C0858900ECF332 /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		D8B0996A22C085E800ECF332 /* FavoriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteList.swift; sourceTree = "<group>"; };
+		D8B0996C22C0886E00ECF332 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		D8C8746422BDF36300D8F003 /* getAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getAPIData.swift; sourceTree = "<group>"; };
 		D8C8746922BE6D0B00D8F003 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		D8C8746D22BF83AB00D8F003 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +79,9 @@
 		D86CDAB922BB24DB00BD4010 = {
 			isa = PBXGroup;
 			children = (
+				D885033F22CA29380025D74C /* Bridging-Header.m */,
+				D885033E22CA29370025D74C /* delyClient-Bridging-Header.h */,
+				D885033A22CA269F0025D74C /* heart.json */,
 				D86CDAC422BB24DB00BD4010 /* delyClient */,
 				D86CDAC322BB24DB00BD4010 /* Products */,
 				5C0EEDD9BFB75979C7ACCC90 /* Pods */,
@@ -113,7 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				D86CDAC922BB24DB00BD4010 /* ContentView.swift */,
-				D8C8746D22BF83AB00D8F003 /* Image.swift */,
+				D8B0996822C0858900ECF332 /* RecipeList.swift */,
+				D8B0996A22C085E800ECF332 /* FavoriteList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,7 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				D8C8746422BDF36300D8F003 /* getAPIData.swift */,
-				D8913E9622BBAA6E006ABFF0 /* ModelAcquisition.swift */,
+				D8B0996C22C0886E00ECF332 /* UserData.swift */,
+				D885033C22CA27930025D74C /* LottieAnimation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +183,7 @@
 				TargetAttributes = {
 					D86CDAC122BB24DB00BD4010 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -197,6 +212,7 @@
 			files = (
 				D86CDAD222BB24DE00BD4010 /* LaunchScreen.storyboard in Resources */,
 				D86CDACF22BB24DE00BD4010 /* Preview Assets.xcassets in Resources */,
+				D885033B22CA269F0025D74C /* heart.json in Resources */,
 				D86CDACC22BB24DE00BD4010 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +254,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -246,6 +263,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,13 +277,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B0996B22C085E800ECF332 /* FavoriteList.swift in Sources */,
 				D86CDAC622BB24DB00BD4010 /* AppDelegate.swift in Sources */,
 				D86CDAC822BB24DB00BD4010 /* SceneDelegate.swift in Sources */,
 				D86CDACA22BB24DB00BD4010 /* ContentView.swift in Sources */,
 				D8C8746A22BE6D0C00D8F003 /* UIImage.swift in Sources */,
-				D8913E9722BBAA6E006ABFF0 /* ModelAcquisition.swift in Sources */,
+				D885033D22CA27930025D74C /* LottieAnimation.swift in Sources */,
+				D885034022CA29380025D74C /* Bridging-Header.m in Sources */,
 				D8C8746522BDF36300D8F003 /* getAPIData.swift in Sources */,
-				D8C8746E22BF83AB00D8F003 /* Image.swift in Sources */,
+				D8B0996D22C0886E00ECF332 /* UserData.swift in Sources */,
+				D8B0996922C0858900ECF332 /* RecipeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +423,7 @@
 			baseConfigurationReference = 2CB468F41E13C5E07D9A0752 /* Pods-delyClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "delyClient/Preview\\ Content";
 				DEVELOPMENT_TEAM = QPP3YCUQC6;
@@ -413,6 +435,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.SwiftUI.delyClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "delyClient-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -423,6 +447,7 @@
 			baseConfigurationReference = 3FC67B078C2402041682D31C /* Pods-delyClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "delyClient/Preview\\ Content";
 				DEVELOPMENT_TEAM = QPP3YCUQC6;
@@ -434,6 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.SwiftUI.delyClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "delyClient-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

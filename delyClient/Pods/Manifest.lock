@@ -2,24 +2,28 @@ PODS:
   - Alamofire (4.8.2)
   - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
+  - lottie-ios (3.1.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - lottie-ios
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - lottie-ios
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  lottie-ios: 9467723922dfff46f6d4e3019c32594a62440b7c
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 8c3f1db65ee6c44af7e2240db1198fbb891aae96
+PODFILE CHECKSUM: fab6b837bf5fba7e046d37cd9dea6202407dd709
 
 COCOAPODS: 1.6.1

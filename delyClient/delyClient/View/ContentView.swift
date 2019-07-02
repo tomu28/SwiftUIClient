@@ -9,45 +9,28 @@
 import SwiftUI
 
 struct ContentView : View {
+    @State private var selection = 0
     
     var body: some View {
-        NavigationView{
-            List() {
-                ForEach(0..<10) { index in
-                    HStack {
-                        ForEach(0..<1) { _ in
-                            VStack {
-                                Image(uiImage: UIImage(url:
-                                    APIDataList[index * 2]["image"]!!))
-                                    .resizable()
-                                    .scaledToFit()
-                                    .padding(.bottom, 8.0)
-                                    .padding(.trailing, 2.0)
-                                    .padding(.leading, -6.0)
-                                Text(APIDataList[index * 2]["title"]!!)
-                                    .font(.system(size: 11))
-                                    .fontWeight(.bold)
-                                    .lineLimit(2)
-                            }
-                            VStack {
-                                Image(uiImage: UIImage(url:
-                                    APIDataList[index * 2 + 1]["image"]!!))
-                                    .resizable()
-                                    .scaledToFit()
-                                    .padding(.bottom, 8.0)
-                                    .padding(.trailing, -6.0)
-                                    .padding(.leading, 2.0)
-                                Text(APIDataList[index * 2 + 1]["title"]!!)
-                                    .font(.system(size: 11))
-                                    .fontWeight(.bold)
-                                    .lineLimit(2)
-                            }
-                        }
+        TabbedView(selection: $selection) {
+
+            RecipeList()
+                .tabItemLabel(
+                    VStack
+                    {
+                        Image("recipeIcon")
+                        Text("レシピ")
                     }
-                }
-            }
-            .foregroundColor(.orange)
-            .navigationBarTitle(Text("料理"))
+                ).tag(0)
+            
+            FavoriteList()
+                .tabItemLabel(
+                    VStack {
+                        Image("favoriteIcon")
+                        Text("お気に入り")
+                    }
+                ).tag(1)
+            
         }
     }
 

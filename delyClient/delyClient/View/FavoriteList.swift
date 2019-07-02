@@ -60,7 +60,8 @@ struct FavoriteList : View {
                 }
                 }
                 .foregroundColor(.orange)
-                .navigationBarTitle(Text("お気に入り"))
+                .navigationBarTitle(Text("お気に入り  　件数：\(ButtonState.count)"))
+            
         }
 
     }

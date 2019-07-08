@@ -1,5 +1,4 @@
-# delyClient
-dely株式会社のiOSインターン事前課題
+# `SwiftUI`を使ったクライアントアプリ
 
 ## 開発環境
 - masOS 10.15 Beta2(19A487I)

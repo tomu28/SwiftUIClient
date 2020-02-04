@@ -1,5 +1,7 @@
 # `SwiftUI`を使ったクライアントアプリ
 
+[![swift-5.0](https://img.shields.io/badge/swift-5.0-brightgreen.svg)](https://github.com/apple/swift)
+
 ## 開発環境
 - masOS 10.15 Beta2(19A487I)
 - Xcode 11.0 Beta2(11M337n)
